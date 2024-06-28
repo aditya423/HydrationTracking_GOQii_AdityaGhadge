@@ -9,23 +9,41 @@
 /* Begin PBXBuildFile section */
 		7828510A2C2F168300578498 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782851092C2F168300578498 /* AppDelegate.swift */; };
 		7828510C2C2F168300578498 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828510B2C2F168300578498 /* SceneDelegate.swift */; };
-		7828510E2C2F168300578498 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828510D2C2F168300578498 /* ViewController.swift */; };
-		782851112C2F168300578498 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7828510F2C2F168300578498 /* Main.storyboard */; };
-		782851142C2F168300578498 /* HydrationTracking_GOQii_AdityaGhadge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 782851122C2F168300578498 /* HydrationTracking_GOQii_AdityaGhadge.xcdatamodeld */; };
+		782851142C2F168300578498 /* HydrationTracking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 782851122C2F168300578498 /* HydrationTracking.xcdatamodeld */; };
 		782851162C2F168400578498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 782851152C2F168400578498 /* Assets.xcassets */; };
 		782851192C2F168400578498 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 782851172C2F168400578498 /* LaunchScreen.storyboard */; };
+		782851252C2F185B00578498 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782851242C2F185B00578498 /* DatabaseManager.swift */; };
+		7828512F2C2F20F500578498 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828512D2C2F20F500578498 /* HomeViewController.swift */; };
+		782851302C2F20F500578498 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7828512E2C2F20F500578498 /* HomeViewController.xib */; };
+		782851342C2F354600578498 /* SetProgressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782851322C2F354600578498 /* SetProgressTableViewCell.swift */; };
+		782851352C2F354600578498 /* SetProgressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 782851332C2F354600578498 /* SetProgressTableViewCell.xib */; };
+		782851382C2F356700578498 /* LottieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782851362C2F356700578498 /* LottieTableViewCell.swift */; };
+		782851392C2F356700578498 /* LottieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 782851372C2F356700578498 /* LottieTableViewCell.xib */; };
+		7828513C2C2F358D00578498 /* QuickLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828513A2C2F358D00578498 /* QuickLogTableViewCell.swift */; };
+		7828513D2C2F358D00578498 /* QuickLogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7828513B2C2F358D00578498 /* QuickLogTableViewCell.xib */; };
+		782851412C2F37BC00578498 /* CellConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782851402C2F37BC00578498 /* CellConstants.swift */; };
+		782851432C2F3E0C00578498 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782851422C2F3E0C00578498 /* StringConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		782851062C2F168300578498 /* HydrationTracking_GOQii_AdityaGhadge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HydrationTracking_GOQii_AdityaGhadge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		782851092C2F168300578498 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7828510B2C2F168300578498 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7828510D2C2F168300578498 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		782851102C2F168300578498 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		782851132C2F168300578498 /* HydrationTracking_GOQii_AdityaGhadge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HydrationTracking_GOQii_AdityaGhadge.xcdatamodel; sourceTree = "<group>"; };
 		782851152C2F168400578498 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		782851182C2F168400578498 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7828511A2C2F168400578498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		782851242C2F185B00578498 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		7828512D2C2F20F500578498 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7828512E2C2F20F500578498 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		782851322C2F354600578498 /* SetProgressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetProgressTableViewCell.swift; sourceTree = "<group>"; };
+		782851332C2F354600578498 /* SetProgressTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetProgressTableViewCell.xib; sourceTree = "<group>"; };
+		782851362C2F356700578498 /* LottieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieTableViewCell.swift; sourceTree = "<group>"; };
+		782851372C2F356700578498 /* LottieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LottieTableViewCell.xib; sourceTree = "<group>"; };
+		7828513A2C2F358D00578498 /* QuickLogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLogTableViewCell.swift; sourceTree = "<group>"; };
+		7828513B2C2F358D00578498 /* QuickLogTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickLogTableViewCell.xib; sourceTree = "<group>"; };
+		782851402C2F37BC00578498 /* CellConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConstants.swift; sourceTree = "<group>"; };
+		782851422C2F3E0C00578498 /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +76,105 @@
 		782851082C2F168300578498 /* HydrationTracking_GOQii_AdityaGhadge */ = {
 			isa = PBXGroup;
 			children = (
-				782851092C2F168300578498 /* AppDelegate.swift */,
-				7828510B2C2F168300578498 /* SceneDelegate.swift */,
-				7828510D2C2F168300578498 /* ViewController.swift */,
-				7828510F2C2F168300578498 /* Main.storyboard */,
-				782851152C2F168400578498 /* Assets.xcassets */,
-				782851172C2F168400578498 /* LaunchScreen.storyboard */,
-				7828511A2C2F168400578498 /* Info.plist */,
-				782851122C2F168300578498 /* HydrationTracking_GOQii_AdityaGhadge.xcdatamodeld */,
+				782851202C2F174900578498 /* Application */,
+				782851232C2F182E00578498 /* Database */,
+				782851212C2F177600578498 /* Modules */,
+				782851222C2F180800578498 /* Utility */,
 			);
 			path = HydrationTracking_GOQii_AdityaGhadge;
+			sourceTree = "<group>";
+		};
+		782851202C2F174900578498 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				782851172C2F168400578498 /* LaunchScreen.storyboard */,
+				7828510B2C2F168300578498 /* SceneDelegate.swift */,
+				782851092C2F168300578498 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		782851212C2F177600578498 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				782851262C2F18E500578498 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		782851222C2F180800578498 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				7828513F2C2F37A800578498 /* Constants */,
+				7828513E2C2F379100578498 /* Resources */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		782851232C2F182E00578498 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				782851122C2F168300578498 /* HydrationTracking.xcdatamodeld */,
+				782851242C2F185B00578498 /* DatabaseManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		782851262C2F18E500578498 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				782851282C2F18F900578498 /* View */,
+				782851272C2F18EE00578498 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		782851272C2F18EE00578498 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		782851282C2F18F900578498 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				782851312C2F34FA00578498 /* Cells */,
+				7828512D2C2F20F500578498 /* HomeViewController.swift */,
+				7828512E2C2F20F500578498 /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		782851312C2F34FA00578498 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				782851322C2F354600578498 /* SetProgressTableViewCell.swift */,
+				782851332C2F354600578498 /* SetProgressTableViewCell.xib */,
+				782851362C2F356700578498 /* LottieTableViewCell.swift */,
+				782851372C2F356700578498 /* LottieTableViewCell.xib */,
+				7828513A2C2F358D00578498 /* QuickLogTableViewCell.swift */,
+				7828513B2C2F358D00578498 /* QuickLogTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7828513E2C2F379100578498 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7828511A2C2F168400578498 /* Info.plist */,
+				782851152C2F168400578498 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7828513F2C2F37A800578498 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				782851402C2F37BC00578498 /* CellConstants.swift */,
+				782851422C2F3E0C00578498 /* StringConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +235,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7828513D2C2F358D00578498 /* QuickLogTableViewCell.xib in Resources */,
 				782851192C2F168400578498 /* LaunchScreen.storyboard in Resources */,
+				782851392C2F356700578498 /* LottieTableViewCell.xib in Resources */,
+				782851352C2F354600578498 /* SetProgressTableViewCell.xib in Resources */,
 				782851162C2F168400578498 /* Assets.xcassets in Resources */,
-				782851112C2F168300578498 /* Main.storyboard in Resources */,
+				782851302C2F20F500578498 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +251,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7828510E2C2F168300578498 /* ViewController.swift in Sources */,
-				782851142C2F168300578498 /* HydrationTracking_GOQii_AdityaGhadge.xcdatamodeld in Sources */,
+				7828513C2C2F358D00578498 /* QuickLogTableViewCell.swift in Sources */,
+				7828512F2C2F20F500578498 /* HomeViewController.swift in Sources */,
+				782851342C2F354600578498 /* SetProgressTableViewCell.swift in Sources */,
+				782851252C2F185B00578498 /* DatabaseManager.swift in Sources */,
+				782851142C2F168300578498 /* HydrationTracking.xcdatamodeld in Sources */,
+				782851412C2F37BC00578498 /* CellConstants.swift in Sources */,
 				7828510A2C2F168300578498 /* AppDelegate.swift in Sources */,
 				7828510C2C2F168300578498 /* SceneDelegate.swift in Sources */,
+				782851432C2F3E0C00578498 /* StringConstants.swift in Sources */,
+				782851382C2F356700578498 /* LottieTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7828510F2C2F168300578498 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				782851102C2F168300578498 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		782851172C2F168400578498 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -301,7 +409,7 @@
 				INFOPLIST_FILE = HydrationTracking_GOQii_AdityaGhadge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -329,7 +437,7 @@
 				INFOPLIST_FILE = HydrationTracking_GOQii_AdityaGhadge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -369,13 +477,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		782851122C2F168300578498 /* HydrationTracking_GOQii_AdityaGhadge.xcdatamodeld */ = {
+		782851122C2F168300578498 /* HydrationTracking.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				782851132C2F168300578498 /* HydrationTracking_GOQii_AdityaGhadge.xcdatamodel */,
 			);
 			currentVersion = 782851132C2F168300578498 /* HydrationTracking_GOQii_AdityaGhadge.xcdatamodel */;
-			path = HydrationTracking_GOQii_AdityaGhadge.xcdatamodeld;
+			path = HydrationTracking.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
