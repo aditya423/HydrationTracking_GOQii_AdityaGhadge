@@ -22,7 +22,6 @@ class SetProgressTableViewCell: UITableViewCell {
     @IBOutlet weak var submitBtn: UIButton!
     
     // MARK: VARIABLES
-    var isEditingTf: Bool = false
     weak var delegate: SetProgressCellProtocol?
     var limit: LimitEntity?
     var limits: [LimitEntity]?
@@ -90,43 +89,27 @@ class SetProgressTableViewCell: UITableViewCell {
     }
     
     @IBAction func submitBtnAction(_ sender: Any) {
-        if isEditingTf {
-            if (targetTf.text?.isEmpty ?? true) || (progressTf.text?.isEmpty ?? true) {
-                targetTf.isUserInteractionEnabled = true
-                progressTf.isUserInteractionEnabled = true
-                targetTf.text = "0.0"
-                progressTf.text = "0.0"
-                delegate?.showAlertMsg(msg: StringConstants.emptyFields.rawValue)
-            } else if (Float(targetTf.text ?? "-1") ?? -1 < 0) || (Float(progressTf.text ?? "-1") ?? -1 < 0) {
-                targetTf.isUserInteractionEnabled = true
-                progressTf.isUserInteractionEnabled = true
-                targetTf.text = "0.0"
-                progressTf.text = "0.0"
-                delegate?.showAlertMsg(msg: StringConstants.invalidFields.rawValue)
-            } else {
-                targetTf.isUserInteractionEnabled = false
-                progressTf.isUserInteractionEnabled = false
-                let dailyTarget = Float(targetTf.text ?? "0") ?? 0
-                let dailyProgress = Float(progressTf.text ?? "0") ?? 0
-                let limitModel = LimitModel(dailyTarget: dailyTarget, dailyProgress: dailyProgress)
-                if let limit {
-                    limit.dailyTarget = dailyTarget
-                    limit.dailyProgress = dailyProgress
-                    manager.updateLimits(limit: limitModel, limitEntity: limit)
-                } else {
-                    manager.addLimits(limit: limitModel)
-                }
-                if dailyProgress >= dailyTarget {
-                    delegate?.presentAlert()
-                }
-            }
+        if submitBtn.titleLabel?.text == StringConstants.submit.rawValue {
+            targetTf.isUserInteractionEnabled = false
+            progressTf.isUserInteractionEnabled = false
             submitBtn.setTitle(StringConstants.edit.rawValue, for: .normal)
-            isEditingTf = false
+            let dailyTarget = Float(targetTf.text ?? "0") ?? 0
+            let dailyProgress = Float(progressTf.text ?? "0") ?? 0
+            let limitModel = LimitModel(dailyTarget: dailyTarget, dailyProgress: dailyProgress)
+            if let limit {
+                limit.dailyTarget = dailyTarget
+                limit.dailyProgress = dailyProgress
+                manager.updateLimits(limit: limitModel, limitEntity: limit)
+            } else {
+                manager.addLimits(limit: limitModel)
+            }
+            if dailyProgress >= dailyTarget {
+                delegate?.presentAlert()
+            }
         } else {
             targetTf.isUserInteractionEnabled = true
             progressTf.isUserInteractionEnabled = true
             submitBtn.setTitle(StringConstants.submit.rawValue, for: .normal)
-            isEditingTf = true
         }
     }
     
@@ -147,16 +130,15 @@ class SetProgressTableViewCell: UITableViewCell {
 
 // MARK: TEXTFIELD DELEGATE FUNCTIONS
 extension SetProgressTableViewCell: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if let nextField = self.contentView.viewWithTag(textField.tag + 1) as? UITextField {
-            nextField.becomeFirstResponder()
-        } else {
-            textField.resignFirstResponder()
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        guard let text = textField.text, let number = Float(text) else {
+            limits = manager.fetchLimits()
+            if textField.tag == 0 {
+                targetTf.text = String(limits?.last?.dailyTarget ?? 0)
+            } else {
+                progressTf.text = String(limits?.last?.dailyProgress ?? 0)
+            }
+            return
         }
-        return false
-    }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        textField.text = ""
     }
 }
