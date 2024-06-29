@@ -1,7 +1,6 @@
 
 # Hydration Tracking iOS Application
 
-<br>
 
 ### Setup Instructions
 1. Download the code using above green button
