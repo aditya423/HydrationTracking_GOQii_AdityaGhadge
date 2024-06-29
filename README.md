@@ -2,12 +2,12 @@
 # Hydration Tracking iOS Application
 
 
-# Hydration Tracking iOS Application
 
 <p align="center">
-  <img src="https://github.com/aditya423/HydrationTracking_GOQii_AdityaGhadge/assets/65207859/c0919b0c-1320-4ff3-ba90-0ce7cff7c35d" alt="screenshot1" width="45%" />
-  <img src="https://github.com/aditya423/HydrationTracking_GOQii_AdityaGhadge/assets/65207859/07c722e0-7255-4126-afca-8e5110f07763" alt="screenshot2" width="45%" />
+  <img src="https://github.com/aditya423/HydrationTracking_GOQii_AdityaGhadge/assets/65207859/c0919b0c-1320-4ff3-ba90-0ce7cff7c35d" alt="screenshot1" width="40%" />
 </p>
+
+<img src="https://github.com/aditya423/HydrationTracking_GOQii_AdityaGhadge/assets/65207859/07c722e0-7255-4126-afca-8e5110f07763" alt="screenshot2" width="45%" />
 
 <p align="center">
   <img src="https://github.com/aditya423/HydrationTracking_GOQii_AdityaGhadge/assets/65207859/badda534-dc3b-4662-86a9-1242bf0d3900" alt="screenshot3" width="45%" />
