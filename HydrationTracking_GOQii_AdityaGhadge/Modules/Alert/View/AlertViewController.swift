@@ -9,15 +9,18 @@ import UIKit
 
 class AlertViewController: UIViewController {
     
+    // MARK: IBOUTLETS
     @IBOutlet weak var alertView: UIView!
     @IBOutlet weak var alertTitle: UILabel!
     @IBOutlet weak var alertImageView: UIImageView!
     
+    // MARK: LIFECYCLE
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     }
     
+    // MARK: FUNCTIONS
     static func loadFromNib() -> AlertViewController {
         return AlertViewController(nibName: FileConstants.alertVC.rawValue, bundle: nil)
     }

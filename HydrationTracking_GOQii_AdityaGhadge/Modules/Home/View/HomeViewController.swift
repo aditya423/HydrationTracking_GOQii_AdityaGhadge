@@ -9,6 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    // MARK: IBOUTLETS
     @IBOutlet weak var titleLbl: UILabel! {
         didSet {
             titleLbl.text = StringConstants.title.rawValue
@@ -27,6 +28,7 @@ class HomeViewController: UIViewController {
         }
     }
     
+    // MARK: LIFECYCLE
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardOnTap()
@@ -37,6 +39,7 @@ class HomeViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
+    // MARK: FUNCTIONS
     func checkForPermission() {
         let notificationCenter = UNUserNotificationCenter.current()
         notificationCenter.getNotificationSettings { settings in
@@ -96,6 +99,7 @@ class HomeViewController: UIViewController {
     }
 }
 
+// MARK: TABLEVIEW TELEGATE & DATASOURCE FUNCTIONS
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
@@ -143,6 +147,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
+// MARK: SetProgressCellProtocol FUNCTIONS
 extension HomeViewController: SetProgressCellProtocol {
     func showAlertMsg(msg: String) {
         self.showAlert(title: StringConstants.alertTitle.rawValue, message: msg)

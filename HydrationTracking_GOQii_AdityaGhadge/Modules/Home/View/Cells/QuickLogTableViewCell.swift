@@ -9,6 +9,7 @@ import UIKit
 
 class QuickLogTableViewCell: UITableViewCell {
     
+    // MARK: IBOUTLETS
     @IBOutlet weak var quickLogLbl: UILabel!
     @IBOutlet weak var customImageView: UIImageView!
     @IBOutlet weak var btn200: UIButton!
@@ -21,10 +22,13 @@ class QuickLogTableViewCell: UITableViewCell {
     @IBOutlet weak var lbl1000: UILabel!
     @IBOutlet weak var cancelBtn: UIButton!
     @IBOutlet weak var submitBtn: UIButton!
+    
+    // MARK: VARIABLES
     var buttons: [UIButton] = []
     static var waterAmount: Float = 0.00
     static var updateSetProgressCell = NSNotification.Name(NotificationNames.updateSetProgress.rawValue)
     
+    // MARK: LIFECYCLE
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -33,6 +37,7 @@ class QuickLogTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    // MARK: FUNCTIONS
     func configureCell() {
         quickLogLbl.text = StringConstants.quickLog.rawValue
         customImageView.image = UIImage(named: ImageConstants.bottle0.rawValue)

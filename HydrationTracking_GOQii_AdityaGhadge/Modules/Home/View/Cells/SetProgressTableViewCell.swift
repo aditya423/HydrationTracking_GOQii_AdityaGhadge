@@ -14,17 +14,21 @@ protocol SetProgressCellProtocol: NSObject {
 
 class SetProgressTableViewCell: UITableViewCell {
     
+    // MARK: IBOUTLETS
     @IBOutlet weak var targetLbl: UILabel!
     @IBOutlet weak var targetTf: UITextField!
     @IBOutlet weak var progressLbl: UILabel!
     @IBOutlet weak var progressTf: UITextField!
     @IBOutlet weak var submitBtn: UIButton!
+    
+    // MARK: VARIABLES
     var isEditingTf: Bool = false
     weak var delegate: SetProgressCellProtocol?
     var limit: LimitEntity?
     var limits: [LimitEntity]?
     private let manager = DatabaseManager()
     
+    // MARK: LIFECYCLE
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -33,6 +37,7 @@ class SetProgressTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    // MARK: FUNCTIONS
     func configureCell() {
         targetTf.delegate = self
         progressTf.delegate = self
@@ -140,6 +145,7 @@ class SetProgressTableViewCell: UITableViewCell {
     }
 }
 
+// MARK: TEXTFIELD DELEGATE FUNCTIONS
 extension SetProgressTableViewCell: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if let nextField = self.contentView.viewWithTag(textField.tag + 1) as? UITextField {

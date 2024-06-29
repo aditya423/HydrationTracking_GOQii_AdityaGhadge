@@ -19,15 +19,10 @@
 		782851352C2F354600578498 /* SetProgressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 782851332C2F354600578498 /* SetProgressTableViewCell.xib */; };
 		7828513C2C2F358D00578498 /* QuickLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828513A2C2F358D00578498 /* QuickLogTableViewCell.swift */; };
 		7828513D2C2F358D00578498 /* QuickLogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7828513B2C2F358D00578498 /* QuickLogTableViewCell.xib */; };
-		782851412C2F37BC00578498 /* CellConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782851402C2F37BC00578498 /* CellConstants.swift */; };
-		782851432C2F3E0C00578498 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782851422C2F3E0C00578498 /* StringConstants.swift */; };
-		782851482C2F441900578498 /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782851472C2F441900578498 /* ImageConstants.swift */; };
-		786017182C2FE69D0036875D /* ViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786017172C2FE69D0036875D /* ViewConstants.swift */; };
 		7860171C2C2FFF4B0036875D /* LimitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7860171B2C2FFF4B0036875D /* LimitModel.swift */; };
-		786017262C3008C80036875D /* NotificationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786017252C3008C80036875D /* NotificationConstants.swift */; };
 		7860172B2C300BF80036875D /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786017292C300BF80036875D /* AlertViewController.swift */; };
 		7860172C2C300BF80036875D /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7860172A2C300BF80036875D /* AlertViewController.xib */; };
-		7860172E2C3012BD0036875D /* FileConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7860172D2C3012BD0036875D /* FileConstants.swift */; };
+		786017302C3027DC0036875D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7860172F2C3027DC0036875D /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,15 +40,10 @@
 		782851332C2F354600578498 /* SetProgressTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetProgressTableViewCell.xib; sourceTree = "<group>"; };
 		7828513A2C2F358D00578498 /* QuickLogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLogTableViewCell.swift; sourceTree = "<group>"; };
 		7828513B2C2F358D00578498 /* QuickLogTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickLogTableViewCell.xib; sourceTree = "<group>"; };
-		782851402C2F37BC00578498 /* CellConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConstants.swift; sourceTree = "<group>"; };
-		782851422C2F3E0C00578498 /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
-		782851472C2F441900578498 /* ImageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstants.swift; sourceTree = "<group>"; };
-		786017172C2FE69D0036875D /* ViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConstants.swift; sourceTree = "<group>"; };
 		7860171B2C2FFF4B0036875D /* LimitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitModel.swift; sourceTree = "<group>"; };
-		786017252C3008C80036875D /* NotificationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationConstants.swift; sourceTree = "<group>"; };
 		786017292C300BF80036875D /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		7860172A2C300BF80036875D /* AlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertViewController.xib; sourceTree = "<group>"; };
-		7860172D2C3012BD0036875D /* FileConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileConstants.swift; sourceTree = "<group>"; };
+		7860172F2C3027DC0036875D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,16 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				782851282C2F18F900578498 /* View */,
-				782851272C2F18EE00578498 /* ViewModel */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		782851272C2F18EE00578498 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		782851282C2F18F900578498 /* View */ = {
@@ -181,12 +163,7 @@
 		7828513F2C2F37A800578498 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				782851402C2F37BC00578498 /* CellConstants.swift */,
-				782851422C2F3E0C00578498 /* StringConstants.swift */,
-				782851472C2F441900578498 /* ImageConstants.swift */,
-				786017172C2FE69D0036875D /* ViewConstants.swift */,
-				786017252C3008C80036875D /* NotificationConstants.swift */,
-				7860172D2C3012BD0036875D /* FileConstants.swift */,
+				7860172F2C3027DC0036875D /* Constants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -288,15 +265,10 @@
 				782851342C2F354600578498 /* SetProgressTableViewCell.swift in Sources */,
 				7860171C2C2FFF4B0036875D /* LimitModel.swift in Sources */,
 				782851252C2F185B00578498 /* DatabaseManager.swift in Sources */,
-				786017262C3008C80036875D /* NotificationConstants.swift in Sources */,
+				786017302C3027DC0036875D /* Constants.swift in Sources */,
 				782851142C2F168300578498 /* HydrationTracking.xcdatamodeld in Sources */,
-				786017182C2FE69D0036875D /* ViewConstants.swift in Sources */,
-				782851412C2F37BC00578498 /* CellConstants.swift in Sources */,
-				782851482C2F441900578498 /* ImageConstants.swift in Sources */,
 				7828510A2C2F168300578498 /* AppDelegate.swift in Sources */,
-				7860172E2C3012BD0036875D /* FileConstants.swift in Sources */,
 				7828510C2C2F168300578498 /* SceneDelegate.swift in Sources */,
-				782851432C2F3E0C00578498 /* StringConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
