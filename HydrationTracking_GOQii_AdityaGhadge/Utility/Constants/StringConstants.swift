@@ -20,4 +20,9 @@ enum StringConstants: String {
     case ml750 = "750 ml"
     case ml1000 = "1 Litre"
     case quickLog = "Quick Log"
+    case done = "Done"
+    case alertTitle = "Alert"
+    case emptyFields = "Please fill both the fields"
+    case invalidFields = "Entered fields are not valid"
+    case milestoneAchieved = "Daily Milestone Acheived!"
 }

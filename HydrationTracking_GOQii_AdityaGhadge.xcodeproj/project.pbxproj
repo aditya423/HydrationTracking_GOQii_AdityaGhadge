@@ -17,14 +17,17 @@
 		782851302C2F20F500578498 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7828512E2C2F20F500578498 /* HomeViewController.xib */; };
 		782851342C2F354600578498 /* SetProgressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782851322C2F354600578498 /* SetProgressTableViewCell.swift */; };
 		782851352C2F354600578498 /* SetProgressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 782851332C2F354600578498 /* SetProgressTableViewCell.xib */; };
-		782851382C2F356700578498 /* LottieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782851362C2F356700578498 /* LottieTableViewCell.swift */; };
-		782851392C2F356700578498 /* LottieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 782851372C2F356700578498 /* LottieTableViewCell.xib */; };
 		7828513C2C2F358D00578498 /* QuickLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828513A2C2F358D00578498 /* QuickLogTableViewCell.swift */; };
 		7828513D2C2F358D00578498 /* QuickLogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7828513B2C2F358D00578498 /* QuickLogTableViewCell.xib */; };
 		782851412C2F37BC00578498 /* CellConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782851402C2F37BC00578498 /* CellConstants.swift */; };
 		782851432C2F3E0C00578498 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782851422C2F3E0C00578498 /* StringConstants.swift */; };
 		782851482C2F441900578498 /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782851472C2F441900578498 /* ImageConstants.swift */; };
 		786017182C2FE69D0036875D /* ViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786017172C2FE69D0036875D /* ViewConstants.swift */; };
+		7860171C2C2FFF4B0036875D /* LimitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7860171B2C2FFF4B0036875D /* LimitModel.swift */; };
+		786017262C3008C80036875D /* NotificationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786017252C3008C80036875D /* NotificationConstants.swift */; };
+		7860172B2C300BF80036875D /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786017292C300BF80036875D /* AlertViewController.swift */; };
+		7860172C2C300BF80036875D /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7860172A2C300BF80036875D /* AlertViewController.xib */; };
+		7860172E2C3012BD0036875D /* FileConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7860172D2C3012BD0036875D /* FileConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,14 +43,17 @@
 		7828512E2C2F20F500578498 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		782851322C2F354600578498 /* SetProgressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetProgressTableViewCell.swift; sourceTree = "<group>"; };
 		782851332C2F354600578498 /* SetProgressTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetProgressTableViewCell.xib; sourceTree = "<group>"; };
-		782851362C2F356700578498 /* LottieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieTableViewCell.swift; sourceTree = "<group>"; };
-		782851372C2F356700578498 /* LottieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LottieTableViewCell.xib; sourceTree = "<group>"; };
 		7828513A2C2F358D00578498 /* QuickLogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLogTableViewCell.swift; sourceTree = "<group>"; };
 		7828513B2C2F358D00578498 /* QuickLogTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickLogTableViewCell.xib; sourceTree = "<group>"; };
 		782851402C2F37BC00578498 /* CellConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConstants.swift; sourceTree = "<group>"; };
 		782851422C2F3E0C00578498 /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
 		782851472C2F441900578498 /* ImageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstants.swift; sourceTree = "<group>"; };
 		786017172C2FE69D0036875D /* ViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConstants.swift; sourceTree = "<group>"; };
+		7860171B2C2FFF4B0036875D /* LimitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitModel.swift; sourceTree = "<group>"; };
+		786017252C3008C80036875D /* NotificationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationConstants.swift; sourceTree = "<group>"; };
+		786017292C300BF80036875D /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		7860172A2C300BF80036875D /* AlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertViewController.xib; sourceTree = "<group>"; };
+		7860172D2C3012BD0036875D /* FileConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				782851262C2F18E500578498 /* Home */,
+				786017272C300BC20036875D /* Alert */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -121,6 +128,7 @@
 			children = (
 				782851122C2F168300578498 /* HydrationTracking.xcdatamodeld */,
 				782851242C2F185B00578498 /* DatabaseManager.swift */,
+				7860171B2C2FFF4B0036875D /* LimitModel.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -156,8 +164,6 @@
 			children = (
 				782851322C2F354600578498 /* SetProgressTableViewCell.swift */,
 				782851332C2F354600578498 /* SetProgressTableViewCell.xib */,
-				782851362C2F356700578498 /* LottieTableViewCell.swift */,
-				782851372C2F356700578498 /* LottieTableViewCell.xib */,
 				7828513A2C2F358D00578498 /* QuickLogTableViewCell.swift */,
 				7828513B2C2F358D00578498 /* QuickLogTableViewCell.xib */,
 			);
@@ -179,8 +185,27 @@
 				782851422C2F3E0C00578498 /* StringConstants.swift */,
 				782851472C2F441900578498 /* ImageConstants.swift */,
 				786017172C2FE69D0036875D /* ViewConstants.swift */,
+				786017252C3008C80036875D /* NotificationConstants.swift */,
+				7860172D2C3012BD0036875D /* FileConstants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		786017272C300BC20036875D /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				786017282C300BDC0036875D /* View */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		786017282C300BDC0036875D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				786017292C300BF80036875D /* AlertViewController.swift */,
+				7860172A2C300BF80036875D /* AlertViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,10 +268,10 @@
 			files = (
 				7828513D2C2F358D00578498 /* QuickLogTableViewCell.xib in Resources */,
 				782851192C2F168400578498 /* LaunchScreen.storyboard in Resources */,
-				782851392C2F356700578498 /* LottieTableViewCell.xib in Resources */,
 				782851352C2F354600578498 /* SetProgressTableViewCell.xib in Resources */,
 				782851162C2F168400578498 /* Assets.xcassets in Resources */,
 				782851302C2F20F500578498 /* HomeViewController.xib in Resources */,
+				7860172C2C300BF80036875D /* AlertViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,17 +283,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				7828513C2C2F358D00578498 /* QuickLogTableViewCell.swift in Sources */,
+				7860172B2C300BF80036875D /* AlertViewController.swift in Sources */,
 				7828512F2C2F20F500578498 /* HomeViewController.swift in Sources */,
 				782851342C2F354600578498 /* SetProgressTableViewCell.swift in Sources */,
+				7860171C2C2FFF4B0036875D /* LimitModel.swift in Sources */,
 				782851252C2F185B00578498 /* DatabaseManager.swift in Sources */,
+				786017262C3008C80036875D /* NotificationConstants.swift in Sources */,
 				782851142C2F168300578498 /* HydrationTracking.xcdatamodeld in Sources */,
 				786017182C2FE69D0036875D /* ViewConstants.swift in Sources */,
 				782851412C2F37BC00578498 /* CellConstants.swift in Sources */,
 				782851482C2F441900578498 /* ImageConstants.swift in Sources */,
 				7828510A2C2F168300578498 /* AppDelegate.swift in Sources */,
+				7860172E2C3012BD0036875D /* FileConstants.swift in Sources */,
 				7828510C2C2F168300578498 /* SceneDelegate.swift in Sources */,
 				782851432C2F3E0C00578498 /* StringConstants.swift in Sources */,
-				782851382C2F356700578498 /* LottieTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +443,8 @@
 				DEVELOPMENT_TEAM = Z37X84PRTQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HydrationTracking_GOQii_AdityaGhadge/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Hydration Tracking";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -443,6 +473,8 @@
 				DEVELOPMENT_TEAM = Z37X84PRTQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HydrationTracking_GOQii_AdityaGhadge/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Hydration Tracking";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";

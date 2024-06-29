@@ -9,6 +9,5 @@ import Foundation
 
 enum CellConstants: String {
     case setProgressCell = "SetProgressTableViewCell"
-    case lottieCell = "LottieTableViewCell"
     case quickLogCell = "QuickLogTableViewCell"
 }

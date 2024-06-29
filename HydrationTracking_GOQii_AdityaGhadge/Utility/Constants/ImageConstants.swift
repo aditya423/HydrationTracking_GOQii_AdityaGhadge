@@ -17,4 +17,5 @@ enum ImageConstants: String {
     case bottle500 = "bottle500"
     case bottle750 = "bottle750"
     case bottle1000 = "bottle1000"
+    case hurray = "hurray"
 }

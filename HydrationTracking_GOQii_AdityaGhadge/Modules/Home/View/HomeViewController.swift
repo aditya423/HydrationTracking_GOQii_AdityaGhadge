@@ -19,7 +19,6 @@ class HomeViewController: UIViewController {
             tblView.delegate = self
             tblView.dataSource = self
             let cells = [CellConstants.setProgressCell.rawValue,
-                         CellConstants.lottieCell.rawValue,
                          CellConstants.quickLogCell.rawValue
             ]
             for cell in cells {
@@ -30,10 +29,70 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardOnTap()
+        checkForPermission()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    func checkForPermission() {
+        let notificationCenter = UNUserNotificationCenter.current()
+        notificationCenter.getNotificationSettings { settings in
+            switch settings.authorizationStatus {
+            case .authorized:
+                self.dispatchNotificationOnSpecificTime()
+            case .denied:
+                return
+            case .notDetermined:
+                notificationCenter.requestAuthorization(options: [.alert, .sound]) { (didAllow, error) in
+                    if didAllow {
+                        self.dispatchNotificationOnSpecificTime()
+                    }
+                }
+            default:
+                return
+            }
+        }
+    }
+    
+    func dispatchNotificationOnSpecificTime() {
+        let notificationCenter = UNUserNotificationCenter.current()
+        let identifier = "my-morning-notification"
+        let title = "Reminder!"
+        let body = "Set you daily target"
+        let hour = 8
+        let minute = 0
+        let isDaily = true
+        let content = UNMutableNotificationContent()
+        content.title = title
+        content.body = body
+        content.sound = .default
+        var dateComponents = DateComponents(calendar: Calendar.current, timeZone: TimeZone.current)
+        dateComponents.hour = hour
+        dateComponents.minute = minute
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: isDaily)
+        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+        notificationCenter.removePendingNotificationRequests(withIdentifiers: [identifier])
+        notificationCenter.add(request)
+    }
+    
+    func hideKeyboardOnTap(){
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(dismissMyKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissMyKeyboard(){
+        view.endEditing(true)
+    }
+    
+    func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+        present(alert, animated: true)
     }
 }
 
@@ -50,15 +109,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         switch indexPath.section {
         case 0:
             let cell = tblView.dequeueReusableCell(withIdentifier: CellConstants.setProgressCell.rawValue, for: indexPath) as! SetProgressTableViewCell
+            cell.delegate = self
             cell.configureCell()
             cell.selectionStyle = .none
             return cell
         case 1:
-            let cell = tblView.dequeueReusableCell(withIdentifier: CellConstants.lottieCell.rawValue, for: indexPath) as! LottieTableViewCell
-            cell.configureCell()
-            cell.selectionStyle = .none
-            return cell
-        case 2:
             let cell = tblView.dequeueReusableCell(withIdentifier: CellConstants.quickLogCell.rawValue, for: indexPath) as! QuickLogTableViewCell
             cell.configureCell()
             cell.selectionStyle = .none
@@ -73,9 +128,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         case 0:
             return 150
         case 1:
-            return 200
-        case 3:
-            return 250
+            return 450
         default:
             return UITableView.automaticDimension
         }
@@ -87,5 +140,16 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 0.1
+    }
+}
+
+extension HomeViewController: SetProgressCellProtocol {
+    func showAlertMsg(msg: String) {
+        self.showAlert(title: StringConstants.alertTitle.rawValue, message: msg)
+    }
+    
+    func presentAlert() {
+        let vc = AlertViewController.loadFromNib()
+        self.navigationController?.present(vc, animated: true)
     }
 }
