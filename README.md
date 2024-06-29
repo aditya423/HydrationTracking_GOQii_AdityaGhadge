@@ -1,7 +1,17 @@
 
 # Hydration Tracking iOS Application
 
+<hr>
 
+### Setup Instructions
+1. Download the code using above green button
+2. Select last option for downloading in zip format or second last option to directly clone in Xcode
+3. If downloaded in zip format unzip it and open the "HydrationTracking_GOQii_AdityaGhadge.xcodeproj" inside the folder
+4. After opening the project in Xcode, build and run the project and you will be able to see the application in simulator
+
+<hr>
+
+### Application Flow
 
 This is the launchscreen of an app with a good message to the user
 <p>
