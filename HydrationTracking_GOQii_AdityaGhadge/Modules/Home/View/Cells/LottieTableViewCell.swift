@@ -8,7 +8,9 @@
 import UIKit
 
 class LottieTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var customImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -18,6 +20,6 @@ class LottieTableViewCell: UITableViewCell {
     }
     
     func configureCell() {
-        
+        customImageView.image = UIImage(named: ImageConstants.bottle0.rawValue)
     }
 }

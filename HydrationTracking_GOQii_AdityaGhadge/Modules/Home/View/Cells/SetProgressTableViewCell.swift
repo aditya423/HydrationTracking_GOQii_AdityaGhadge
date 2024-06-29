@@ -31,6 +31,7 @@ class SetProgressTableViewCell: UITableViewCell {
         submitBtn.backgroundColor = UIColor(red: 110/255, green: 180/255, blue: 232/255, alpha: 1)
         submitBtn.setTitle(StringConstants.edit.rawValue, for: .normal)
         submitBtn.setTitleColor(.white, for: .normal)
+        submitBtn.layer.cornerRadius = 5
     }
     
     @IBAction func submitBtnAction(_ sender: Any) {

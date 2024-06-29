@@ -23,6 +23,8 @@
 		7828513D2C2F358D00578498 /* QuickLogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7828513B2C2F358D00578498 /* QuickLogTableViewCell.xib */; };
 		782851412C2F37BC00578498 /* CellConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782851402C2F37BC00578498 /* CellConstants.swift */; };
 		782851432C2F3E0C00578498 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782851422C2F3E0C00578498 /* StringConstants.swift */; };
+		782851482C2F441900578498 /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782851472C2F441900578498 /* ImageConstants.swift */; };
+		786017182C2FE69D0036875D /* ViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786017172C2FE69D0036875D /* ViewConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		7828513B2C2F358D00578498 /* QuickLogTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickLogTableViewCell.xib; sourceTree = "<group>"; };
 		782851402C2F37BC00578498 /* CellConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConstants.swift; sourceTree = "<group>"; };
 		782851422C2F3E0C00578498 /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		782851472C2F441900578498 /* ImageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstants.swift; sourceTree = "<group>"; };
+		786017172C2FE69D0036875D /* ViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 				782851232C2F182E00578498 /* Database */,
 				782851212C2F177600578498 /* Modules */,
 				782851222C2F180800578498 /* Utility */,
+				7828511A2C2F168400578498 /* Info.plist */,
 			);
 			path = HydrationTracking_GOQii_AdityaGhadge;
 			sourceTree = "<group>";
@@ -139,9 +144,9 @@
 		782851282C2F18F900578498 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				782851312C2F34FA00578498 /* Cells */,
 				7828512D2C2F20F500578498 /* HomeViewController.swift */,
 				7828512E2C2F20F500578498 /* HomeViewController.xib */,
+				782851312C2F34FA00578498 /* Cells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,7 +167,6 @@
 		7828513E2C2F379100578498 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7828511A2C2F168400578498 /* Info.plist */,
 				782851152C2F168400578498 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -173,6 +177,8 @@
 			children = (
 				782851402C2F37BC00578498 /* CellConstants.swift */,
 				782851422C2F3E0C00578498 /* StringConstants.swift */,
+				782851472C2F441900578498 /* ImageConstants.swift */,
+				786017172C2FE69D0036875D /* ViewConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -256,7 +262,9 @@
 				782851342C2F354600578498 /* SetProgressTableViewCell.swift in Sources */,
 				782851252C2F185B00578498 /* DatabaseManager.swift in Sources */,
 				782851142C2F168300578498 /* HydrationTracking.xcdatamodeld in Sources */,
+				786017182C2FE69D0036875D /* ViewConstants.swift in Sources */,
 				782851412C2F37BC00578498 /* CellConstants.swift in Sources */,
+				782851482C2F441900578498 /* ImageConstants.swift in Sources */,
 				7828510A2C2F168300578498 /* AppDelegate.swift in Sources */,
 				7828510C2C2F168300578498 /* SceneDelegate.swift in Sources */,
 				782851432C2F3E0C00578498 /* StringConstants.swift in Sources */,
@@ -315,7 +323,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -378,7 +386,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

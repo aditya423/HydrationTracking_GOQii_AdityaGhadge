@@ -31,6 +31,10 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -47,13 +51,17 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         case 0:
             let cell = tblView.dequeueReusableCell(withIdentifier: CellConstants.setProgressCell.rawValue, for: indexPath) as! SetProgressTableViewCell
             cell.configureCell()
+            cell.selectionStyle = .none
             return cell
         case 1:
             let cell = tblView.dequeueReusableCell(withIdentifier: CellConstants.lottieCell.rawValue, for: indexPath) as! LottieTableViewCell
             cell.configureCell()
+            cell.selectionStyle = .none
             return cell
         case 2:
             let cell = tblView.dequeueReusableCell(withIdentifier: CellConstants.quickLogCell.rawValue, for: indexPath) as! QuickLogTableViewCell
+            cell.configureCell()
+            cell.selectionStyle = .none
             return cell
         default:
             return UITableViewCell()
@@ -61,6 +69,23 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        switch indexPath.section {
+        case 0:
+            return 150
+        case 1:
+            return 200
+        case 3:
+            return 250
+        default:
+            return UITableView.automaticDimension
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.1
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0.1
     }
 }
