@@ -138,6 +138,7 @@ extension SetProgressTableViewCell: UITextFieldDelegate {
             } else {
                 progressTf.text = String(limits?.last?.dailyProgress ?? 0)
             }
+            delegate?.showAlertMsg(msg: StringConstants.invalidFields.rawValue)
             return
         }
     }

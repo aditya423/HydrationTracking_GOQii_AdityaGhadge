@@ -22,7 +22,7 @@ enum StringConstants: String {
     case quickLog = "Quick Log"
     case done = "Done"
     case alertTitle = "Alert"
-    case invalidFields = "Entered fields are not valid"
+    case invalidFields = "Please enter a valid number"
     case milestoneAchieved = "Daily Milestone Acheived!"
 }
 
