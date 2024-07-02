@@ -36,6 +36,5 @@
 5. If user allows for sending notifications, app will daily notify the user to set the target at the start of the day (8AM)
 <p align="center">
   <img src="https://github.com/aditya423/HydrationTracking_GOQii_AdityaGhadge/assets/65207859/cf24be13-6787-4240-9195-37020ab8602b" alt="screenshot7" width="30%" height="50%" />
-  <img src="https://github.com/aditya423/HydrationTracking_GOQii_AdityaGhadge/assets/65207859/12c3c43b-9c81-4ef6-9271-f6e80c873026" alt="screenshot6" width="30%" height="50%" />
+  <img src="https://github.com/aditya423/HydrationTracking_GOQii_AdityaGhadge/assets/65207859/e3967dd6-9ca1-48d9-822d-0bd3cc64ca35" alt="screenshot6" width="30%" height="50%" />
 </p>
-
